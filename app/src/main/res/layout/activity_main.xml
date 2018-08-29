@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <lecho.lib.hellocharts.view.PieChartView
+        android:layout_width="300dp"
+        android:id="@+id/piechart"
+        android:layout_gravity="center"
+        android:layout_height="300dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:id="@+id/one"
+                android:layout_gravity="center_vertical"
+                android:text="是否有标签"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:id="@+id/two"
+                android:text="标签是否在扇形外面"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:id="@+id/three"
+                android:text="是否有中心圆"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/four"
+                android:textSize="13sp"
+                android:text="中心的文字1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:id="@+id/five"
+                android:text="中心的文字2"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="0dp"
+                android:textSize="13sp"
+                android:id="@+id/six"
+                android:layout_weight="1"
+                android:text="是否是炸开的图像"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="0dp"
+                android:textSize="13sp"
+                android:id="@+id/seven"
+                android:layout_weight="1"
+                android:text="选中的扇形显示标签"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
